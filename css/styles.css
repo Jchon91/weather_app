@@ -1,0 +1,106 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  height:100vh; /* 100vh Use entire screen*/
+  display:flex;
+  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+  font-family:sans-serif;
+  color:white;
+}
+.container-all{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin:auto;
+}
+.box-today {
+  height: 70vh;
+  width: 70vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border-style:solid;
+  border-color:white;
+}
+.container{
+  display:flex;
+  flex-direction:column;
+}
+.box-1{
+  height:35vh;
+  width:35vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-style:solid;
+  border-color:white;
+}
+.box-2 {
+  height:35vh;
+  width:35vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-style:solid;
+  border-color:white;
+}
+
+/*
+.location,
+.temperature{
+  height:30vh;
+  width:50%;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+*/
+.location, .temperature, .evening, .next-day, .tonight, .tomorrow{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.location, .temperature{
+  margin:auto;
+}
+
+.degree-section{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+.degree-section span{
+  margin:10px;
+  font-size:30px;
+}
+.degree-section h2{
+  font-size:40px;
+}
+.icon, .icon-tonight, .icon-tomorrow{
+  padding:15px;
+}
+
+@media only screen and (max-width: 730px){
+  .icon {
+    width:128px;
+    height:128px;
+  }
+  .container{
+    flex-direction:row;
+  }
+  .container-all{
+    flex-direction:column;
+  }
+  .box-today{
+    height:50vh;
+  }
+
+}

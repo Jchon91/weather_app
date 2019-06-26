@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Simple Weather App</title>
+  <meta name="description" content="Weather App" />
+  <meta name="author" content="SitePoint" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/styles.css?v=1.0" />
+
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+  <script src="js/weather.js"></script>
+  <script src="js/skycons.js"></script>
+
+<div class="container-all">
+
+  <div class="box-today">
+    <div class="location">
+      <h1 class="location-timezone">Timezone</h1>
+      <canvas class="icon" width="200" height="200"></canvas>
+    </div>
+    <div class="temperature">
+      <div class="degree-section">
+        <h2 class="temperature-degree">--</h2>
+        <span>F</span>
+      </div>
+        <div class="temperature-description">Unavailable</div>
+    </div>
+  </div>
+
+
+<div class="container">
+    <div class="box-1">
+      <div class="evening">
+        <h2>Tonight</h2>
+        <canvas class="icon-tonight" width="64" height="64"></canvas>
+      </div>
+        <div class="tonight">
+          <h3 class="tonight-temp">--</h3>
+          <div class="tonight-summary">Unavailable</div>
+        </div>
+
+
+    </div>
+    <div class="box-2">
+      <div class="next-day">
+        <h2>Tomorrow</h2>
+        <canvas class="icon-tomorrow" width="64" height="64"></canvas>
+      </div>
+          <div class="tomorrow">
+            <h3 class="tomorrow-temp">--</h3>
+            <div class="tomorrow-summary">Unavailable</div>
+          </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
